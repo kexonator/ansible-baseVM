@@ -20,7 +20,7 @@ adduser $USER vboxsf &&\
 echo \"shared /home/$USER/shared vboxsf defaults,fmode=700,uid=1000,umask=0077 0 0\" | tee -a /etc/fstab &&\
 echo \"scanner /home/$USER/Downloads vboxsf defaults,fmode=700,uid=1000,umask=0077 0 0\" | tee -a /etc/fstab &&\
 echo \"deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main\" | tee -a /etc/apt/sources.list &&\
- apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367 &&\
+ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 93C4A3FD7BB9C367 &&\
 apt-get update &&\
 apt-get install -y ansible 
 rm /etc/rc.local

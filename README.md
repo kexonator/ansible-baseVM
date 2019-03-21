@@ -17,6 +17,9 @@ usually, preparing virtual machines for ansible provisioning is not in any scope
 
 a logfile will be placed into the home folder of configured user (current user by default).
 
+# word of caution
+please do not start this script as root, as it will not be executed correctly
+
 # configuration
 currently it is possibe to pick a user and location for the logfile
 
